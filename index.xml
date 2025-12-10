@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>DiffGeoTopo&#039;s Blog</title>
+      <link>https://diffgeotopo.github.io</link>
+      <description>Last 10 notes on DiffGeoTopo&#039;s Blog</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Baire Category Theorem</title>
+    <link>https://diffgeotopo.github.io/analysis-2/baire-category</link>
+    <guid>https://diffgeotopo.github.io/analysis-2/baire-category</guid>
+    <description><![CDATA[ The Baire Category Theorem In a complete metric space…. ]]></description>
+    <pubDate>Fri, 12 Dec 2025 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Topology</title>
+    <link>https://diffgeotopo.github.io/topology/index-topology</link>
+    <guid>https://diffgeotopo.github.io/topology/index-topology</guid>
+    <description><![CDATA[ Topology Focus: Point-Set &amp; Algebraic Topology Topics Topological Spaces &amp; Basis Connectedness &amp; Compactness The Fundamental Group . ]]></description>
+    <pubDate>Wed, 10 Dec 2025 16:00:59 GMT</pubDate>
+  </item><item>
+    <title>About Me</title>
+    <link>https://diffgeotopo.github.io/about</link>
+    <guid>https://diffgeotopo.github.io/about</guid>
+    <description><![CDATA[ Welcome to my math blog! I am (shamim akhtar) currently a 2nd year student at Chennai Mathematical Institute, pursuing a double major in Math + CS. ]]></description>
+    <pubDate>Wed, 10 Dec 2025 16:00:59 GMT</pubDate>
+  </item><item>
+    <title>Course Overview</title>
+    <link>https://diffgeotopo.github.io/algebra-3/index-algebra</link>
+    <guid>https://diffgeotopo.github.io/algebra-3/index-algebra</guid>
+    <description><![CDATA[ Instructor : Clare D’Cruz Focus: Ring Theory, Field Theory, Elementary Commutative Algebra Quiz 1 Quiz 2 Insights : Problem 4 : Characteristic is the main issue, and for the case d=3, use generalised eisenstein (x_1+x_2 is prime!) Midsem Endsem Insights : Problem 1 (ii) : Is somehow FALSE : Interest... ]]></description>
+    <pubDate>Wed, 10 Dec 2025 16:00:59 GMT</pubDate>
+  </item><item>
+    <title>Course Overview</title>
+    <link>https://diffgeotopo.github.io/analysis-2/index-analysis</link>
+    <guid>https://diffgeotopo.github.io/analysis-2/index-analysis</guid>
+    <description><![CDATA[ Instructor : R Srinivasan (Vasanth) Focus: Advanced Metric Spaces and Analysis, Elementary Functional Analysis, Baire Category, Ascoli-Arzela, Stone-Weierstrass, Connectedness, Banach Spaces, Hilbert Spaces, Fourier Analysis Quiz 2 Insight : Problem 3 is a great “first time” moment where ascoli-arze... ]]></description>
+    <pubDate>Wed, 10 Dec 2025 16:00:59 GMT</pubDate>
+  </item><item>
+    <title>Course Overview</title>
+    <link>https://diffgeotopo.github.io/calculus-2/index-calculus</link>
+    <guid>https://diffgeotopo.github.io/calculus-2/index-calculus</guid>
+    <description><![CDATA[ Instructor : Krishna Hanumanthu Focus: Multivariable Calculus, Partitions of Unity, Tensor Algebra, Tangent Spaces, Stokes’ Theorem, Differential Forms, Intgeration on Chains Quiz 1 Midsem Endsem Insights : Problem 2 : Crux - \mathbb{R}^2/ \{ 0 \} is not star shaped while \mathbb{R}^2 is (hence take... ]]></description>
+    <pubDate>Wed, 10 Dec 2025 16:00:59 GMT</pubDate>
+  </item><item>
+    <title>Home</title>
+    <link>https://diffgeotopo.github.io/</link>
+    <guid>https://diffgeotopo.github.io/</guid>
+    <description><![CDATA[  BREAK YOUR LIMITER &quot;For a STEM student, a problem is something to be fixed. ]]></description>
+    <pubDate>Wed, 10 Dec 2025 16:00:59 GMT</pubDate>
+  </item><item>
+    <title>Fourier Analysis</title>
+    <link>https://diffgeotopo.github.io/analysis-2/fourier-series</link>
+    <guid>https://diffgeotopo.github.io/analysis-2/fourier-series</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Wed, 10 Dec 2025 00:00:00 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
