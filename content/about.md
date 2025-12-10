@@ -4,7 +4,7 @@ title: About Me
 tags : noob, donkey, skibidi, brainrot, valorant-bronze, goru
 ---
 Welcome to my math blog! I am (shamim akhtar) currently a 2nd year student at Chennai Mathematical Institute, pursuing a double major in Math + CS. Although i suck at CS, i suck more at physics. This blog's main purpose is storage for papers at CMI(quizzes, midsems, endsems, maybe other interesting problems), and just going a tad more into detail about the intricacies (why/what) involved while learning something new and how sigma mathematics is! 
-    CMI has been, atleast academically, a stellar place - being surrounded by so many sigmas (seriously, hands down the smartest people i have ever come across) has truly been one of the moments ever - although this sometimes does put me in existential crisis, its still very fun. 
+    CMI has been, atleast academically, a stellar place - being surrounded by so many sigmas (seriously, hands down the smartest people i have ever come across) has truly been one of the most moments ever - although this sometimes does put me in existential crisis, its still very fun. 
 
 <details>
   <summary style="cursor: pointer; color: var(--secondary); font-weight: bold;">
