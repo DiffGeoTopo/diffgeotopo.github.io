@@ -35,7 +35,7 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          # if your repository is a GitHub user/organization page (e.g. <user>.github.io) 
-          # then you may need to use 'main' as the publish branch
-          # publish_branch: main
-          # Otherwise, the default 'gh-pages' is usually correct for project pages
+            # if your repository is a a GitHub user/organization page (e.g. <user>.github.io) 
+            # then you may need to use 'main' as the publish branch
+            publish_branch: main 
+            # Otherwise, the default 'gh-pages' is usually correct for project pages
