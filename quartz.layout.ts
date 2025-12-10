@@ -38,7 +38,10 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    // In quartz.layout.ts
+Component.Explorer({
+  folderClickBehavior: "collapse", // This disables navigation and enables expanding/collapsing
+}),
   ],
   right: [
     Component.Graph(),

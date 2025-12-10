@@ -1,3 +1,301 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+.sidebar, .page {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.sidebar-item a { transition: all 0.3s ease; }
+.sidebar-item a:hover {
+    text-shadow: 0 0 8px var(--tertiary);
+    transform: translateX(5px);
+    color: var(--tertiary) !important;
+}
+
+.topic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 229, 255, 0.3);
+    border-color: var(--secondary);
+}
+.garou-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+.garou-img {
+    width: 180px;
+    height: auto;
+    border-radius: 20px;
+    animation: float 6s ease-in-out infinite;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.2);
+}
+.garou-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px var(--secondary);
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+.hero-subtitle {
+    text-align: center;
+    font-family: var(--codeFont);
+    color: var(--secondary);
+    font-size: 1.1em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    letter-spacing: 0.05em;
+}
+/* --- Advanced Card Layout (Arjun Agarwal Style) --- */
+
+/* The Container for the Grid */
+/* --- 3D "Apple" Scroll & Smoothness --- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* The Container for 3D effects */
+.garou-container, .quote-box, .popover {
+    /* Subtle entrance animation */
+    animation: fadeUp 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Delays for the "Staggered" feel */
+.garou-container { animation-delay: 0.1s; }
+.hero-subtitle   { animation-delay: 0.3s; }
+.quote-box       { animation-delay: 0.5s; }
+
+/* The "Apple" 3D Tilt Effect on images/boxes */
+.garou-img {
+    transition: transform 0.1s ease-out; /* Super fast response for tilt */
+    transform-style: preserve-3d;
+    will-change: transform;
+}
+
+/* --- One Punch Man Easter Eggs --- */
+
+/* 1. Hidden Saitama (Peeking from bottom right) */
+body::after {
+    content: '';
+    position: fixed;
+    bottom: -50px; /* Hidden initially */
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    background-image: url('https://i.pinimg.com/originals/9f/ec/17/9fec17666271a938c35f92264560a0f9.png'); /* Tiny Saitama Head */
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    transition: bottom 0.3s ease;
+    z-index: 9999;
+    pointer-events: none; /* Let clicks pass through */
+}
+
+/* He peeks up when you are near the bottom of the page */
+body:hover::after {
+    bottom: 0px; /* Peek-a-boo! */
+}
+
+/* 2. Genos Core in the Graph View (The glowing circle) */
+.graph {
+    border: 1px solid var(--secondary);
+    box-shadow: 0 0 20px rgba(255, 165, 0, 0.2); /* Orange Genos Glow */
+}
+
+/* Animation Keyframes */
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* The Button Group (Notes, Quizzes, etc.) */
+.card-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Wraps buttons if there are too many */
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Individual Pill Buttons */
+/* --- The "Neon Data Chip" Buttons --- */
+
+.card-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+/* The Button Style */
+.btn-chip {
+    position: relative;
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 0.8rem;
+    font-family: var(--codeFont);
+    text-transform: uppercase; /* Makes text uppercase like code constants */
+    letter-spacing: 0.05em;
+    
+    /* The "Glass Chip" Look */
+    background: rgba(0, 229, 255, 0.05);
+    border: 1px solid var(--secondary);
+    border-radius: 4px; /* Sharp corners, not round */
+    color: var(--secondary);
+    text-decoration: none !important;
+    
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+
+/* The Cool Hover Effect */
+.btn-chip:hover {
+    background: var(--secondary);
+    color: var(--light) !important; /* Text turns black/dark on hover */
+    box-shadow: 0 0 15px var(--secondary); /* Strong neon glow */
+    transform: translateY(-2px); /* Slight lift */
+    border-color: var(--tertiary);
+}
+
+/* Optional: Add a tiny "tech" marker on the left */
+.btn-chip::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 3px;
+    height: 60%;
+    background: var(--tertiary);
+    transform: translateY(-50%);
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.btn-chip:hover::before {
+    opacity: 1;
+    background: white;
+}
+
+/* --- Quote Box Style --- */
+.quote-box {
+    border-left: 4px solid var(--tertiary);
+    background: rgba(255, 255, 255, 0.03);
+    padding: 15px 20px;
+    margin: 30px 0;
+    font-style: italic;
+    font-size: 1.1em;
+    color: var(--darkgray);
+    border-radius: 0 10px 10px 0;
+}
+/* quartz/styles/custom.scss */
+
+/* quartz/styles/custom.scss */
+
+/* 1. Make the main body background transparent */
+body {
+  background-color: transparent !important;
+  position: relative;
+}
+
+/* 2. Create the Parallax Background Layer */
+/* quartz/styles/custom.scss */
+
+/* 1. Base Setup for the Parallax Container */
+body {
+  background-color: transparent !important;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  /* Fixed position creates the parallax effect */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Send to back */
+  
+  /* Standard Image Settings */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  
+  /* Transition effect so the background fades smoothly when you switch themes */
+  transition: background-image 0.5s ease, opacity 0.5s ease;
+}
+
+/* 2. Dark Mode Configuration */
+:root[saved-theme="dark"] body::before {
+  /* Use the dark starry sky */
+  background-image: url('/static/starry.png');
+  
+  /* Opacity: 0.25 is readable. 0.4 is prettier but might clash with text. */
+  opacity: 0.25;
+  filter: none;
+}
+
+/* 3. Light Mode Configuration */
+:root[saved-theme="light"] body::before {
+  /* Use the new milky way image */
+  background-image: url('/static/milky.png');
+  
+  /* CRITICAL: We invert the colors here. 
+     Since 'milky.png' is likely dark space, inverting it turns the 
+     black vacuum into a clean white background, and the bright stars 
+     into dark ink specks. This makes it perfect for reading black text. */
+    
+  /* Lower opacity for light mode to keep it subtle */
+  opacity: 1;
+}
+/* quartz/styles/custom.scss */
+
+body::after {
+    content: "";
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    width: 180px;  
+    height: 250px; 
+    z-index: -1; 
+
+    /* UPDATED: pointing to .jpg now */
+    background-image: url('/static/saitama.jpg');
+    
+    background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    opacity: 0.9;
+    transition: all 0.5s ease;
+
+    /* MAGIC FIX FOR JPG BOXES: 
+       If your image has a WHITE background, 'multiply' makes it transparent.
+       If your image has a BLACK background, change this to 'screen'. 
+       If you cropped it perfectly, you can remove this line. */
+    mix-blend-mode: multiply; 
+}
+
+/* --- THEME ADJUSTMENTS --- */
+
+:root[saved-theme="dark"] body::after {
+    opacity: 0.7;
+    /* In dark mode, 'multiply' works best if the image background is white */
+    mix-blend-mode: multiply; 
+}
+
+:root[saved-theme="light"] body::after {
+    opacity: 1; 
+    /* In light mode, a white background on the JPG might look okay, 
+       but 'multiply' will blend him into the Milky Way better. */
+    mix-blend-mode: multiply; 
+}

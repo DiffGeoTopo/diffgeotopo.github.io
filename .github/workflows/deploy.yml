@@ -1,0 +1,41 @@
+name: Deploy Quartz
+on:
+  push:
+    branches:
+      - v4
+      # if you want to also deploy when you push to main,
+      # add 'main' here as well
+      # - main
+  pull_request:
+    paths:
+      - .github/workflows/deploy.yml
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # otherwise you cannot access previous commits
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Quartz
+        run: npx quartz build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          # if your repository is a GitHub user/organization page (e.g. <user>.github.io) 
+          # then you may need to use 'main' as the publish branch
+          # publish_branch: main
+          # Otherwise, the default 'gh-pages' is usually correct for project pages

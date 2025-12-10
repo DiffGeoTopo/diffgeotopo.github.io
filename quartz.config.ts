@@ -1,24 +1,16 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
-/**
- * Quartz 4 Configuration
- *
- * See https://quartz.jzhao.xyz/configuration for more information.
- */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
-    pageTitleSuffix: "",
+    pageTitle: "DiffGeoTopo's Blog",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
+    analytics: { provider: "plausible" },
     locale: "en-US",
     baseUrl: "quartz.jzhao.xyz",
     ignorePatterns: ["private", "templates", ".obsidian"],
-    defaultDateType: "modified",
+    defaultDateType: "created",
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
@@ -29,26 +21,32 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
-        },
+      light: "transparent",
+      lightgray: "#4a4a4a",
+      gray: "#646464", 
+      
+      // BODY TEXT: Changed from White to Deep Indigo
+      // This is dark enough to read on the pastel sky, but still colorful.
+      darkgray: "#1a0b2e",        
+      
+      // HEADERS: Kept Neon Purple (Matches the Indigo text well)
+      dark: "#c77dff",            
+      
+      // LINKS: Kept Hot Pink
+      secondary: "#ff79c6",       
+      
+      tertiary: "#8be9fd",
+      highlight: "rgba(199, 125, 255, 0.2)",
+    },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#0a0f14",
+          lightgray: "#1c2b36",
+          gray: "#546e7a",
+          darkgray: "#eceff1",
+          dark: "#80deea",
+          secondary: "#00e5ff",
+          tertiary: "#18ffff",
+          highlight: "rgba(0, 229, 255, 0.15)",
         },
       },
     },
@@ -56,14 +54,9 @@ const config: QuartzConfig = {
   plugins: {
     transformers: [
       Plugin.FrontMatter(),
-      Plugin.CreatedModifiedDate({
-        priority: ["frontmatter", "git", "filesystem"],
-      }),
+      Plugin.CreatedModifiedDate({ priority: ["frontmatter", "filesystem"] }),
       Plugin.SyntaxHighlighting({
-        theme: {
-          light: "github-light",
-          dark: "github-dark",
-        },
+        theme: { light: "github-light", dark: "github-dark" },
         keepBackground: false,
       }),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
@@ -80,18 +73,11 @@ const config: QuartzConfig = {
       Plugin.ContentPage(),
       Plugin.FolderPage(),
       Plugin.TagPage(),
-      Plugin.ContentIndex({
-        enableSiteMap: true,
-        enableRSS: true,
-      }),
+      Plugin.ContentIndex({ enableSiteMap: true, enableRSS: true }),
       Plugin.Assets(),
       Plugin.Static(),
-      Plugin.Favicon(),
       Plugin.NotFoundPage(),
-      // Comment out CustomOgImages to speed up build time
-      Plugin.CustomOgImages(),
     ],
   },
 }
-
 export default config
