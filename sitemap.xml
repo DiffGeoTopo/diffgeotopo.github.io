@@ -1,9 +1,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
     <loc>https://diffgeotopo.github.io/about</loc>
-    <lastmod>2025-12-10T16:32:40.530Z</lastmod>
+    <lastmod>2025-12-18T19:43:26.441Z</lastmod>
   </url><url>
     <loc>https://diffgeotopo.github.io/algebra-3/index-algebra</loc>
-    <lastmod>2025-12-10T16:32:40.531Z</lastmod>
+    <lastmod>2025-12-18T19:43:26.441Z</lastmod>
   </url><url>
     <loc>https://diffgeotopo.github.io/analysis-2/baire-category</loc>
     <lastmod>2025-12-12T00:00:00.000Z</lastmod>
@@ -12,14 +12,23 @@
     <lastmod>2025-12-10T00:00:00.000Z</lastmod>
   </url><url>
     <loc>https://diffgeotopo.github.io/analysis-2/index-analysis</loc>
-    <lastmod>2025-12-10T16:32:40.531Z</lastmod>
+    <lastmod>2025-12-18T19:43:26.441Z</lastmod>
   </url><url>
     <loc>https://diffgeotopo.github.io/calculus-2/index-calculus</loc>
-    <lastmod>2025-12-10T16:32:40.531Z</lastmod>
+    <lastmod>2025-12-18T19:43:26.441Z</lastmod>
   </url><url>
     <loc>https://diffgeotopo.github.io/</loc>
-    <lastmod>2025-12-10T16:32:40.531Z</lastmod>
+    <lastmod>2025-12-18T19:43:26.442Z</lastmod>
   </url><url>
-    <loc>https://diffgeotopo.github.io/topology/index-topology</loc>
-    <lastmod>2025-12-10T16:32:40.531Z</lastmod>
+    <loc>https://diffgeotopo.github.io/topology(A-Karnataki,-2024-Spring)/01-Lecture-1</loc>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
+  </url><url>
+    <loc>https://diffgeotopo.github.io/topology(A-Karnataki,-2024-Spring)/02-Homework-1</loc>
+    <lastmod>2025-12-15T00:00:00.000Z</lastmod>
+  </url><url>
+    <loc>https://diffgeotopo.github.io/topology(A-Karnataki,-2024-Spring)/03-Homework-2</loc>
+    <lastmod>2025-12-18T19:43:26.442Z</lastmod>
+  </url><url>
+    <loc>https://diffgeotopo.github.io/topology(A-Karnataki,-2024-Spring)/index-topology</loc>
+    <lastmod>2025-12-18T19:43:26.442Z</lastmod>
   </url></urlset>
