@@ -11,7 +11,7 @@ tags : sigma, garou, saitama, STEM, JUisTrash, Algebra3
 <p class="hero-subtitle">BREAK YOUR LIMITER</p>
 
 <div class="quote-box">
-    "For a STEM student, a problem is something to be fixed. For a Humanities student (especially in the JU culture), a problem is something to be agitated against." <br>
+    Truth will humble you. Truth will ignore you. Truth will reward you only if you deserve it. <br>
     — <strong>Saitama</strong>
 </div>
 
